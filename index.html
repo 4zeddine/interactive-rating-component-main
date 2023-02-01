@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- linking the fonts.. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <!-- ... -->
+  <link rel="stylesheet" href="/css/output.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <main class="font-overpass text-white bg-darkerBlue h-auto m-0 px-20 py-60 md:px-40">
+    <section class="rating flex-row  items-center max-w-small h-auto mx-auto  bg-drakBlue p-7 rounded-2xl ">
+
+    <div class="w-11 h-11 pt-4 bg-bgblue rounded-full mb-7"><img class="h-3 mx-auto" src="/images/icon-star.svg" alt="icon star"></div>
+    
+    <h1 class="text-2xl font-bold mb-2">How did we do?</h1>
+    
+    <p class="text-p text-lightGrey mb-7">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+  
+      <div class="flex flex-wrap justify-around text-lightGrey">
+        <button class="numbers w-11 h-11 bg-bgblue rounded-full mb-7 hover:bg-lightGrey hover:text-white focus:text-white focus:bg-primary">1</button>
+        <button class="numbers w-11 h-11 bg-bgblue rounded-full mb-7 hover:bg-lightGrey hover:text-white focus:text-white focus:bg-primary">2</button>
+        <button class="numbers w-11 h-11 bg-bgblue rounded-full mb-7 hover:bg-lightGrey hover:text-white focus:text-white focus:bg-primary">3</button>
+        <button class="numbers w-11 h-11 bg-bgblue rounded-full mb-7 hover:bg-lightGrey hover:text-white focus:text-white focus:bg-primary">4</button>
+        <button class="numbers w-11 h-11 bg-bgblue rounded-full mb-7 hover:bg-lightGrey hover:text-white focus:text-white focus:bg-primary">5</button>        
+      </div>
+
+      <button class="submit w-full bg-primary rounded-full py-2 active:bg-white active:text-primary">Submit</button>
+      
+
+    </section>
+  
+  
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+        <section class="thankyou  flex-row text-center max-w-small h-auto mx-auto  bg-drakBlue p-7 rounded-2xl ">
+          <div class=" w-36 mx-auto mt-3  mb-8">
+            <img class="w-full" src="/images/illustration-thank-you.svg" alt="smart phone with credit card and file around">
+          </div>
+          <div class="text-p text-primary mb-7 bg-bgblue w-44 mx-auto rounded-full pt-1">You selected <span class="rate"></span> out of 5</div> 
+
+          <h1 class="text-2xl font-bold mb-2">Thank you!</h1>
+          <p class="text-p text-lightGrey mb-7">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don't hesitate to get in touch!</p>
+  
+        </section>
+  <!-- Thank you state end -->
+        
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
