@@ -1,7 +1,7 @@
 var selected ;
 // Hidding the thank you section ..
 
-document.querySelector(".thankyou").classList.add("hidden");
+
 
   //get the number selected ..
 var numbers =document.querySelectorAll(".numbers");
